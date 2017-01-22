@@ -1,7 +1,13 @@
-<html>
-<body>
-<p>
-<a href="/_posts/2017-01-20-hello-world.html">LINK TEST</a>
-</p>
-</body>
-</html>
+---
+layout: default
+title: lvhuo_blog
+---
+
+<div id="home">
+  <h1>Title Test</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
