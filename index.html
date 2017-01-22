@@ -1,13 +1,25 @@
----
-layout: default
-title: lvhuo_blog
----
+<html>
+<head>
 
-<div id="home">
-  <h1>Title Test</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<style type="text/css">
+
+body {background-color: yellow}
+h1 {background-color: #00ff00}
+h2 {background-color: transparent}
+p {background-color: rgb(250,0,255)}
+
+p.no2 {background-color: gray; padding: 20px;}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>这是标题 1</h1>
+<h2>这是标题 2</h2>
+<p>这是段落</p>
+<p class="no2">这个段落设置了内边距。</p>
+
+</body>
+</html>
